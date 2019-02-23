@@ -1,5 +1,9 @@
-console.log('My Minimal React Webpack Babel Setup');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const obj={name:'Yaroslav', age: 48, id:1};
-let {name} = obj;
-console.log(name);
+const title = 'My Minimal React Webpack Babel Setup';
+
+ReactDOM.render(
+  <div>{title}</div>,
+  document.getElementById('app')
+);
